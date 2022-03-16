@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "../css/estilo.css">
+    <link rel = "stylesheet" href = "../css/contatos.css">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul class="menu-list">
+                <li><a href="index.html"> Página Principal </a></li>
+                <li><a href="#"> Vídeo </a>
+                <ul class="sub-menu">
+                    <li><a href="video.html"> Risoto de pera e gorgonzola </a></li>
+                </ul>
+                    <li><a href="contato.html"> Contatos</a></li>
+                </ul>
+        </nav>        
+    </header>
+
+    <section>
+        <form name = "cadastro" method="post" action="contato.html" onsubmit="return enviar();">
+            <p><div>
+                <label for="nome"> Nome: </label>
+                <input type="text" name="nome" id="nome"/>
+            </div></p>
+
+            <br>
+
+            <p><div>
+               Data de nascimento:<input type="date" name="nasc" id="cNasc"/>
+            </div></p>
+
+            <br>
+
+            <p><label> Sexo: </label>
+                <label class="radio">
+                    <input type="radio" name="sexo" value="Masculino">Masculino
+                   <input type="radio" name="sexo" value="Feminino">Feminino
+                </label></p>
+            
+            <br>
+
+            <p>Endereço:
+                <input type="text" name="end" id="cEnd"/>
+            </p>
+
+            <br>
+
+            <p><div>
+                <label for="fone"> Telefone: </label>
+                <input type="tel" name = "fone" id="fone" placeholder="(xx)xxxxx-xxxx" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$"/>
+            </div></p>
+
+            <br>
+
+            <p><div>
+                <label for="mail"> E-mail:</label>
+                <input type="text" name="mail" id="mail" placeholder="nomeemail@servidor.com.br"/>
+            </div></p>
+
+            <br>
+
+            <p><div>
+                <label for="msg"> Mensagem: </label>
+                <textarea type="text" name="msg" id="msg"></textarea>
+            </div></p>
+
+            <br>
+
+            <div class="button">
+                <button type="submit"> Enviar </button>
+            <div class="button">
+                <button type="reset"> Limpar </button>
+            </div>
+        </form>
+    </section>
+    <script>
+        function enviar(){
+            var formulario = document.forms["cadastro"]
+            var nome = formulario.nome.value
+            var nasc = formulario.nasc.value
+            var sexo = formulario.sexo.value
+            var end = formulario.end.value
+            var fone = formulario.fone.value
+            var mail = formulario.mail.value
+            var msg = formulario.msg.value            
+            
+            alert('Cadastro com sucesso: \n\nNome: ' + nome + '\nData de nascimento: ' + nasc + '\nSexo ' + sexo + '\nEndereço: ' + end + '\nTelefone: ' + fone + '\nE-mail: ' + mail + '\nMensagem: ' + msg);
+            return false
+        }   
+
+    </script>
+    
+
+    <aside>
+        <p><b> Entre em contato: leo_gratti@outlook.com</p></b>
+    </aside>
+    
+    <footer>
+        <p><b>&copy; Chef Léo</p></b>
+    </footer>
+    
+</body>
+</html>

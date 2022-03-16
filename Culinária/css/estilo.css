@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(138, 165, 138);
+}
+
+.menu-list{ /*fundo do menu*/
+    background: rgb(80, 172, 156);
+    margin: -10px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial black, verdana, sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    box-shadow: 10px 10px 20px black;
+    border: 3px solid black;
+}
+
+/*Remove os marcadores (bolinhas) da lista*/
+.menu>.menu-list,.sub-menu{
+    list-style: none;
+}
+
+/*Configura todos os links do menu */
+.menu a{ /*todos os dados da navegação*/
+    color: black;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    text-transform: uppercase; /*maiusculo*/
+    font-size: 14px;
+    font-weight: 1000px;
+    letter-spacing: 0.1em; /*espaços de letras*/
+} 
+
+/*Faz com que os elementos da lista (lis) fiquem na horizontal*/
+.menu>.menu-list>li{
+    float: left;
+    position: relative;
+}
+
+/*Configurar os links do menu principal*/
+.menu>.menu-list>li>a{
+    padding: 2px;
+    margin: 10px;   
+}
+
+/*Configura o fundo do menu principal quando com o mouse hover (em cima)*/
+.menu>.menu-list>li:hover a{
+    background: rgb(203, 206, 216);   
+}
+
+/*Mostra o submenu no evento de mouse hover (em cima)*/
+.menu>.menu-list>li:hover>.sub-menu{
+    display: block;
+}
+
+/*Mostra o submenu no evento de mouse hover (em cima)*/
+.menu>.menu-list>li>.sub-menu{
+    position: absolute;
+    top: 45px;
+    left: 3px;
+    background-color: rgb(4, 8, 114);
+    min-width: 100px;
+    z-index: 1000;
+    display:none;
+}
+
+/*Configura os links do submenu*/
+.menu>.menu-list>li>.sub-menu>li>a{
+    padding:10px 20px;
+}
+
+.menu :after{
+    content: '.';
+    display:block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+ 
+@media only screen and (max-width: 760px) and (orientation: landscape){
+    body{
+        background-color:rgb(138, 165, 138) ; 
+    }
+}
+
+
+
+    

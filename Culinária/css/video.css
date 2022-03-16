@@ -1,0 +1,54 @@
+iframe{
+    position: relative;
+    top: auto;
+    margin-left: 380px;
+    box-shadow: 5px 10px 20px black;
+    border-radius: 2ex;
+    border: 5px solid black;
+}
+
+img{
+    position: relative;
+    width: 345px;
+    height: 320px;
+    margin-left: 100px;
+    margin-top: 80px;
+}
+
+h1{
+    text-align: center;
+    margin-top:50px;
+    color: black;
+    box-shadow: 10px 20px 30px black;
+    border: 1px solid black;
+}
+
+img{
+    box-shadow: 5px 10px 20px black;
+    border-radius: 2ex;
+    border: 5px solid black;
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+    margin-right: 100px;;
+}
+
+@media (max-width:700px){
+    iframe, .menu-list{
+        width:40%
+    }
+}
+
+aside{
+    text-align: center;
+    position: relative;
+    top:25em;
+}
+
+footer{
+    text-align: center;
+    position: relative;
+    top:24.5em;
+}

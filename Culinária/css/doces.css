@@ -1,0 +1,122 @@
+h2{
+    text-align: center;
+    font-size: 40px;
+    margin-top:40px;
+    color: rgb(25, 0, 255);
+}
+
+h3{
+    text-align: center;
+    margin-top:-10px;
+}
+
+.receita-item{
+    display: block;
+}
+
+.receita-item:hover img{
+    -moz-transform: scale(1.3);
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.receita-item img{
+    width:220px;
+    height:220px;
+    position: absolute;
+    display: flex;
+    overflow: hidden; 
+    top:200px; 
+    max-width: 100%;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+    transition: all 0.5s; 
+    box-shadow: 5px 5px 5px black;
+    border-radius: 1ex;
+    border: 3px solid black;
+}
+
+.doce_one img{
+    left: 20px;
+}
+
+.doce_two img{
+    left: 280px; 
+}
+
+.doce_three img{
+    left: 545px; 
+}
+
+.button-item{
+    position:absolute;
+    margin:auto;
+    width: 200px;
+    height: 30px;
+    right: 100cm;
+    bottom:250px;
+    top:200px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 1ex;
+    border: 3px solid black;
+}
+
+.button_one{
+    left: 30px
+}
+
+.button_two{
+    left:290px;
+}
+
+.button_three{
+    left:560px;
+}
+
+.mensagem{
+    display:none;
+    position:absolute;
+    top:140%;
+    left:200px;
+    width:750px;
+    border:1px solid black;
+    background-color:white;
+    flex-wrap:wrap;
+    text-align:justify;
+}
+
+.msg_one{
+    height:235px;
+}
+
+.msg_two{
+    height:248px;
+}
+
+.msg_three{
+    height:605px;
+}
+
+input{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+aside{
+    text-align: center;
+    position: relative;
+    top:56.5em;
+}
+
+footer{
+    text-align: center;
+    position: relative;
+    top:56em;
+}
+
+
+
+
+
+
